@@ -129,7 +129,20 @@ Voici un code accessible :
     <p>Site réalisé par Môaa...</p>
 </footer>
 ```
-## 4. Sources et liens utiles 
+
+## 4. L'attribut tabindex
+
+L'attribut tabindex permet de naviguer de lien en lien, a l'aide de la touche tabulation.
+
+**Exemple :**
+
+```
+<a href="monlien" tabindex="1"></a>
+<a href="autrelien" tabindex="2"></a>
+```
+
+Dans l'exemple ci-dessus, en appuyant sur la touche tab une fois on sera sur "monlien", et en appuyant une deuxième fois on arrivera sur "autrelien". 
+## 5. Sources et liens utiles 
 
 On peut également rendre accessible un élément sans utiliser la norme ARIANos sources : 
 
