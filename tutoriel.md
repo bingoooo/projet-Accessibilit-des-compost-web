@@ -87,7 +87,7 @@ Voici un exemple de code non accessible :
     <p>Site réalisé par Môaa...</p>
 </div>
 ```
-### Voici un code accessible pour la lecture du code (indacations avec l'attribut "role"):    
+### Voici un code accessible pour la lecture du code (indications avec l'attribut "role"):    
 ```
 <header role="banner">    
     <hgroup>    
@@ -143,7 +143,7 @@ L'attribut tabindex permet de naviguer d'élément en élément à l'aide de la 
 <a href="autrelien" tabindex="2">Autre lien</a>
 ```
 
-Dans l'exemple ci-dessus, en appuyant sur la touche *tab* une fois on sera sur "monlien", et en appuyant une deuxième fois on arrivera sur "autrelien". Une troisième fois sur "monparagraphe".
+Dans l'exemple ci-dessus, en appuyant sur la touche *tab* une fois on sera sur "monlien", et en appuyant une deuxième fois on arrivera sur "autrelien", une troisième fois sur "monparagraphe".
 
 
 ### Accessibilité pour les non-voyants
@@ -186,8 +186,8 @@ Pour faire une page complètement accessible par des aveugles, on va utiliser le
         </ul>
     </section>
 </aside>
-<footer role="contentinfo" tabindex="16">    
-    <p>Site réalisé par Môaa...</p>
+<footer role="contentinfo">    
+    <p tabindex="16">Site réalisé par Môaa...</p>
 </footer>
 ```
 
@@ -213,4 +213,4 @@ http://reporting.opquast.com/en/inspector/
 
 
 ### Contributeurs
-BINIAM Semere, BRICQUET Thomas, BUISSET Andréa, CERVEAUX Allan, CHAIKHI Justin, DANT Benjamin, ALI Samar, FOURNIER Robin, GOUDENOVE Thomas, GRONDIN Floriane, Hennaoui Mehdi, JARJANETTE Sebastien, JEANBLANC Alice, LACHKAR Karine Anne, LAKHDAR Mohamed Anis, METAIS Louis, MILEKIC Oriane, MOULY Oriane, PEREZ Hervé, RUIZ Raphaël, SAN PEDRO Nicolas, SEHLI Hayate, SOCHALA Marie, SOULIÉ Yoann
+BINIAM Semere, BRICQUET Thomas, BUISSET Andréa, CERVEAUX Allan, CHAIKHI Justin, DANT Benjamin, ALI Samar, FOURNIER Robin, GOUDENOVE Thomas, GRONDIN Floriane, HENNAOUI Mehdi, JARJANETTE Sebastien, JEANBLANC Alice, LACHKAR Karine Anne, LAKHDAR Mohamed Anis, METAIS Louis, MILEKIC Oriane, MOULY Oriane, PEREZ Hervé, RUIZ Raphaël, SAN PEDRO Nicolas, SEHLI Hayate, SOCHALA Marie, SOULIÉ Yoann
