@@ -87,7 +87,7 @@ Voici un exemple de code non accessible :
     <p>Site réalisé par Môaa...</p>
 </div>
 ```
-Voici un code accessible :    
+### Voici un code accessible pour la lecture du code (indacations avec l'attribut "role"):    
 ```
 <header role="banner">    
     <hgroup>    
@@ -138,12 +138,12 @@ L'attribut tabindex permet de naviguer d'élément en élément à l'aide de la 
 **Exemple :**
 
 ```
-<p name="monparagraphe" tabindex="3">Mon paragraphe</p>
 <a href="monlien" tabindex="1">Mon lien</a>
+<p name="monparagraphe" tabindex="3">Mon paragraphe</p>
 <a href="autrelien" tabindex="2">Autre lien</a>
 ```
 
-Dans l'exemple ci-dessus, en appuyant sur la touche tab une fois on sera sur "monlien", et en appuyant une deuxième fois on arrivera sur "autrelien". Une troisième fois sur "monparagraphe".
+Dans l'exemple ci-dessus, en appuyant sur la touche *tab* une fois on sera sur "monlien", et en appuyant une deuxième fois on arrivera sur "autrelien". Une troisième fois sur "monparagraphe".
 
 
 ### Accessibilité pour les non-voyants
@@ -210,3 +210,7 @@ http://www.open-s.com/fr/content/tanaguru-axs
 http://wave.webaim.org//
 
 http://reporting.opquast.com/en/inspector/
+
+
+### Contributeurs
+BINIAM Semere, BRICQUET Thomas, BUISSET Andréa, CERVEAUX Allan, CHAIKHI Justin, DANT Benjamin, ALI Samar, FOURNIER Robin, GOUDENOVE Thomas, GRONDIN Floriane, Hennaoui Mehdi, JARJANETTE Sebastien, JEANBLANC Alice, LACHKAR Karine Anne, LAKHDAR Mohamed Anis, METAIS Louis, MILEKIC Oriane, MOULY Oriane, PEREZ Hervé, RUIZ Raphaël, SAN PEDRO Nicolas, SEHLI Hayate, SOCHALA Marie, SOULIÉ Yoann
