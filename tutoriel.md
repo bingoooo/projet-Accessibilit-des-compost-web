@@ -148,7 +148,7 @@ Dans l'exemple ci-dessus, en appuyant sur la touche tab une fois on sera sur "mo
 
 ### Accessibilité pour les non-voyants
 
-Pour faire une page complètement accessible par des aveugles en utilisant les fonctionalités de `tabindex` de telle manière que le logiciel de narration (dans le cas de Ubuntu, Orca) lise les textes, on modifie le code HTML ainsi:
+Pour faire une page complètement accessible par des aveugles, on va utiliser les fonctionalités de `tabindex` de telle manière que le logiciel de narration (dans le cas de Ubuntu, Orca) lise les textes, on modifie alors le code HTML ainsi:
 ```
 <header role="banner">    
     <hgroup>    
