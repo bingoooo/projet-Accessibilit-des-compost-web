@@ -46,7 +46,7 @@ Voici une check-list exhaustive de tout ce qu'il y a à respecter pour qu'un sit
 * Prendre en compte les éléments HTML utilisés pour lire le contenu                      
 * META tags pour décrire et identfier le contenu   :  ( LISTE DES META TAGS : http://www.objectif-referencement.com/comprendre.php )
 * ALT  tags  pour décrire des images, acronymes, longs textes etc   
-* Tags pour les langues, <span lang="en"> pour une citation et <html lang=fr"> pour la page    Utiliser les tags à notre disposition comme <ACRONYM title=""> et <ABBR title=""> pour les acronymes et les abbréviations, mettre des <label> aux inputs des formulaires    
+* Tags pour les langues, `<span lang="en">` pour une citation et `<html lang=fr">` pour la page. Utiliser les tags à notre disposition comme `<ACRONYM title="">` et `<ABBR title="">` pour les acronymes et les abbréviations, mettre des `<label>` aux inputs des formulaires    
 * Boutons et éléments cliquables assez grands pour qu'ils puissent être cliqués sans devoir cibler de manière précise 
 * Elements commes les liens et boutons créés de manière à ce que leur nature soit évidente   
 * Mettre un texte alternatif pour le contenu sonore ou visuel, vérifier que sans son le contenu fonctionne toujours    
