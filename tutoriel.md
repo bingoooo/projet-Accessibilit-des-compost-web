@@ -132,16 +132,65 @@ Voici un code accessible :
 
 ## 4. L'attribut tabindex
 
-L'attribut tabindex permet de naviguer de lien en lien, a l'aide de la touche tabulation.
+Pour naviguer dans une page avec uniquement le clavier, on utilise en général la tabulation. Par défaut, la tabulation cible les liens "de haut en bas" de la page. Mais elle ne va pas cibler les paragraphes ou autres textes. Pour cela, on utilise donc `tabindex`.
+L'attribut tabindex permet de naviguer d'élément en élément à l'aide de la touche tabulation, dans l'ordre dans lequel on les a attribués. Ça permet donc de mettre le focus sur les éléments de texte qui peuvent alors par exemple être lus par un logiciel narrateur ou de changer l'ordre de sélection des éléments.
 
 **Exemple :**
 
 ```
-<a href="monlien" tabindex="1"></a>
-<a href="autrelien" tabindex="2"></a>
+<p name="monparagraphe" tabindex="3">Mon paragraphe</p>
+<a href="monlien" tabindex="1">Mon lien</a>
+<a href="autrelien" tabindex="2">Autre lien</a>
 ```
 
-Dans l'exemple ci-dessus, en appuyant sur la touche tab une fois on sera sur "monlien", et en appuyant une deuxième fois on arrivera sur "autrelien". 
+Dans l'exemple ci-dessus, en appuyant sur la touche tab une fois on sera sur "monlien", et en appuyant une deuxième fois on arrivera sur "autrelien". Une troisième fois sur "monparagraphe".
+
+
+### Accessibilité pour les non-voyants
+
+Pour faire une page complètement accessible par des aveugles en utilisant les fonctionalités de `tabindex` de telle manière que le logiciel de narration (dans le cas de Ubuntu, Orca) lise les textes, on modifie le code HTML ainsi:
+```
+<header role="banner">    
+    <hgroup>    
+        <h1 tabindex="1">Titre de ma page</h1>    
+        <h2 tabindex="2">Sous-titre de ma page</h2>    
+    </hgroup>
+</header>
+<div id="content" role="main">    
+    <article>    
+        <h3 tabindex="3">Titre de l’article</h3>    
+        <p tabindex="4">Un premier paragraphe</p>    
+        <p tabindex="5">Un second paragraphe</p>    
+    </article>    
+    <article>    
+        <h3 tabindex="6">Titre de l’article</h3>    
+        <p tabindex="7">Un premier paragraphe</p>   
+        <p tabindex="8">Un second paragraphe</p>    
+    </article>
+</div>
+
+    <!--fin content-->
+
+<aside role="complementary">    
+    <section>    
+        <h3 tabindex="9">Édito du jour</h3>    
+        <p tabindex="10">Un premier paragraphe</p>    
+        <p tabindex="11">Un second paragraphe</p>    
+    </section>    
+    <section>    
+        <h3 tabindex="12">Liens utiles</h3>    
+        <ul>    
+            <li><a href="/1" tabindex="13">Lien 1</a></li>    
+            <li><a href="/2" tabindex="14">Lien 2</a></li>    
+            <li><a href="/3" tabindex="15">Lien 3</a></li>    
+        </ul>
+    </section>
+</aside>
+<footer role="contentinfo" tabindex="16">    
+    <p>Site réalisé par Môaa...</p>
+</footer>
+```
+
 ## 5. Sources et liens utiles 
 
 On peut également rendre accessible un élément sans utiliser la norme ARIANos sources : 
